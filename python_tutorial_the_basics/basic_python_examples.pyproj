@@ -1,0 +1,125 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3544cabc-de00-4a11-ac7c-0b4e32355a81</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>example_30.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>basic_python_examples</Name>
+    <RootNamespace>basic_python_examples</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="example_01_hello_world.py" />
+    <Compile Include="example_02_strings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_03_numbers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_04_arithmetic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_05_interactive_help.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_06_booleans.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_07_datetime.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_08_if_then_else.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_09_functions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_10_sets.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_11_lists.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_12_dictionaries.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_13_tuples.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_14_logging.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_15_recusion_and_memoization.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_16_rng.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_17_csv.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_18_random_walk.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_19_list_comprehension.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_20_classes_and_objects.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_21_prime_numbers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_22_pydoc.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_23_json.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_24_lambda_expressions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_25_map_filter_and_reduce_functions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_26_sorting.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_27_text_files.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_28_unit_tests\circles.py" />
+    <Compile Include="example_28_unit_tests\example_28_unit_tests.py" />
+    <Compile Include="example_28_unit_tests\test_circles.py" />
+    <Compile Include="example_29_exceptions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example_30.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="example_28_unit_tests\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
